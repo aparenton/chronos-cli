@@ -1,0 +1,2 @@
+class ChronosException(Exception):
+    pass

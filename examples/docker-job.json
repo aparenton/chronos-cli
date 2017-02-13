@@ -1,0 +1,20 @@
+{
+  "schedule": "R/2014-09-25T17:22:00Z/PT2M",
+  "name": "dockerjob",
+  "container": {
+    "type": "DOCKER",
+    "image": "libmesos/ubuntu",
+    "network": "BRIDGE",
+    "volumes": [
+      {
+        "containerPath": "/var/log/",
+        "hostPath": "/logs/",
+        "mode": "RW"
+      }
+    ]
+  },
+  "cpus": "0.5",
+  "mem": "512",
+  "uris": [],
+  "command": "while sleep 10; do date =u %T; done"
+}

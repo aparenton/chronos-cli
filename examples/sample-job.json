@@ -1,0 +1,7 @@
+{
+  "schedule":"R/2016-07-07T11:00:00.000Z/PT1M",
+  "name":"sample-job",
+  "epsilon":"PT15M",
+  "command":"echo FOO",
+  "async":false
+}

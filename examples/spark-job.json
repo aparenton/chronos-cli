@@ -1,0 +1,14 @@
+{
+  "schedule": "R/2016-07-07T12:00:00Z/PT2M",
+  "name": "spark-job",
+  "container": {
+    "type": "DOCKER",
+    "image": "my/sparksubmitapp",
+    "network": "BRIDGE",
+    "forcePullImage": true
+  },
+  "cpus": "0.5",
+  "mem": "1024",
+  "uris": [],
+  "command": "/path/to/spark/bin/spark-submit --class com.my.app.Main myApp.jar"
+}
